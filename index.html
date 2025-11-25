@@ -1,0 +1,68 @@
+<html>
+    <head> 
+        <title> Bookbuddy </title> <!--Kopfzeile-->
+    </head> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .menu{
+            float:left;
+            width:20%;
+            text-align: center;
+        }
+
+        .menu a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 620px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <script src="script.js"></script>
+    <meta name="viewport" content="wirdthe=device-width, initial-scale=1.0">
+   
+    <body>
+        <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+             <h1>Dein Bookbuddy</h1> <!--Größte überschrift-->
+        </div>
+        
+        <p>Trage hier deine Bücher ein und Sammle sie!</p><!--Paragraph-->
+
+        <div style="overflow:auto">
+            <div class="menu">
+            <button type="button"><a href="booklist.html" >alle Bücher anzeigen</a></button>
+            <button type="button"><a href="read.html">gelesene Bücher anzeigen</a></button>
+            <button type="button"><a href="unread.html">nicht gelesene Bücher anzeigen</a></button>
+            <button type="button"><a href="newbook.html">Buch hinzufügen</a></button>
+            </div>
+
+            
+    </body>
+
+</html>
